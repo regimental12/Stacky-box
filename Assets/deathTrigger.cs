@@ -4,6 +4,7 @@ using System.Collections;
 public class deathTrigger : MonoBehaviour {
     public bool haslost = false;
 
+
 	void OnTriggerEnter2D()
     {
         Debug.Log("trigger");
