@@ -8,7 +8,7 @@ public class InitialVelocity : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
     {
-        rigidbody2D.velocity = initVel;
+        GetComponent<Rigidbody2D>().velocity = initVel;
 	}
 	
 	

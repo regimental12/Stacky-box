@@ -12,6 +12,7 @@ public class MouseManager : MonoBehaviour
 
 	void Update () 
     {
+        if (Input.GetKeyDown(KeyCode.Escape)) { Application.Quit(); }
         if(Input.GetMouseButtonDown(0))
         {
             //check what we clicked
@@ -25,9 +26,9 @@ public class MouseManager : MonoBehaviour
             if(hit.collider != null)
             {
                 //clicked something with a collider
-                if (hit.collider.rigidbody2D != null)
+                if (hit.collider.GetComponent<Rigidbody2D>() != null)
                 {
-                    grabbedObject = hit.collider.rigidbody2D;
+                    grabbedObject = hit.collider.GetComponent<Rigidbody2D>();
                     if (useSpring)
                     {
                         springJoint = grabbedObject.gameObject.AddComponent<SpringJoint2D>();

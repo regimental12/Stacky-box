@@ -10,6 +10,6 @@ public class collisionHandler : MonoBehaviour {
         {
             Camera.main.GetComponent<cameraMover>().targetY = transform.position.y;
         }
-        audio.Play();
+        GetComponent<AudioSource>().Play();
     }
 }

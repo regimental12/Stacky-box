@@ -28,7 +28,7 @@ public class BoxLauncher : MonoBehaviour
 
             GameObject boxGO = (GameObject)Instantiate(boxPrefabs[Random.Range(0, boxPrefabs.Length)], transform.position, transform.rotation);
 
-            boxGO.rigidbody2D.velocity = transform.rotation * new Vector2(0, fireVelocity);
+            boxGO.GetComponent<Rigidbody2D>().velocity = transform.rotation * new Vector2(0, fireVelocity);
 
             GameObject.FindObjectOfType<scoreManager>().score++;
 
