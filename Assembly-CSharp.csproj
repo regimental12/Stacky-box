@@ -49,6 +49,7 @@
      <Compile Include="Assets\BoxLauncher.cs" />
      <Compile Include="Assets\InitialVelocity.cs" />
      <Compile Include="Assets\MouseManager.cs" />
+     <Compile Include="Assets\SettingsButton.cs" />
      <Compile Include="Assets\cameraMover.cs" />
      <Compile Include="Assets\collisionHandler.cs" />
      <Compile Include="Assets\deathTrigger.cs" />
