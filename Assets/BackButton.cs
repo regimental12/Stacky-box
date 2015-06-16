@@ -1,14 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SettingsButton : MonoBehaviour {
-
-
+public class BackButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
 	
-
 	}
 	
 	// Update is called once per frame
@@ -16,8 +13,8 @@ public class SettingsButton : MonoBehaviour {
 	
 	}
 
-    void OnMouseDown()
-    {
-        Application.LoadLevel("Settings");
-    }
+	void OnMouseDown()
+	{
+		Application.LoadLevel ("MainMenu");
+	}
 }

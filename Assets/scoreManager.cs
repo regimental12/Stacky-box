@@ -5,11 +5,12 @@ public class scoreManager : MonoBehaviour {
 
     public Font font;
     public int score = 0;
-   
+	public Color textColor = new Color (0.29f, 0.174f, 0.174f);
+
     void OnGUI()
     {        
         GUI.skin.font = font;
-        GUI.color = Color.grey;
+		GUI.color = textColor;
         //GUI.skin.box.fontSize = 36;
         //GUIStyle style = new GUIStyle(GUI.skin.box);
         //style.padding = new RectOffset(0, 0, 20, 0);
