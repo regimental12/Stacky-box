@@ -1,41 +1,52 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour 
+{
+    public AudioSource music;
+    private static GameManager _Instance;
+    public static GameManager Instance 
+    {
+        get
+        {
+            if (Instance == null)
+            {
+                _Instance = GameObject.FindObjectOfType<GameManager>();
+                DontDestroyOnLoad(Instance.gameObject);
+            }
+            return _Instance;
+        }
+        
+    }
 
-	static GameManager gm;
-	public AudioSource au;
+    void Awake()
+    {
+        if (_Instance == null)
+        {
+            _Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            if(this != _Instance)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+       
+    }
 
-	void Start()
-	{
-		au = gameObject.AddComponent<AudioSource> ();
-		au.clip = Resources.Load ("Outofplace") as AudioClip;
-		au.loop = true;
-		au.Play ();
-	}
+    void Start()
+    {
+        music = gameObject.GetComponent<AudioSource>();
+        music.clip = Resources.Load("Outofplace") as AudioClip;
+        music.loop = true;
+        music.Play();
+    }
+
+    public void toggleMusic()
+    {
+        
+    }
 	
-	static public bool isActive { 
-		get { 
-			return gm != null; 
-		} 
-	}
-	
-	static public GameManager instance
-	{
-		get
-		{
-			if (gm == null)
-			{
-				gm = Object.FindObjectOfType(typeof(GameManager)) as GameManager;
-				
-				if (gm == null)
-				{
-					GameObject go = new GameObject("GameManager");
-					DontDestroyOnLoad(go);
-					gm = go.AddComponent<GameManager>();
-				}
-			}
-			return gm;
-		}
-	}
 }

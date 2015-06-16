@@ -11,7 +11,7 @@ public class scoreManager : MonoBehaviour {
     {        
         GUI.skin.font = font;
 		GUI.color = textColor;
-        //GUI.skin.box.fontSize = 36;
+        GUI.skin.box.fontSize = 36;
         //GUIStyle style = new GUIStyle(GUI.skin.box);
         //style.padding = new RectOffset(0, 0, 20, 0);
         
