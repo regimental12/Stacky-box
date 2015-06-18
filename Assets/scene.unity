@@ -232,8 +232,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 266858445}
   - 132: {fileID: 266858444}
+  - 114: {fileID: 266858446}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -274,6 +275,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
+--- !u!114 &266858446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 266858443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a544ba49bf47904a8666287abc63a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ResumeButton: {fileID: 165686, guid: d4f50220c31d46541b9ffa7a59f72798, type: 2}
+  paused: 0
+  noGUI: 0
 --- !u!1 &534254931
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b7eeeb5e5b238b4b9082df2265776b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useSpring: 1
+  useSpring: 0
   velocityRatio: 4
   dragLine: {fileID: 34429127}
 --- !u!4 &534254933

@@ -52,12 +52,14 @@
      <Compile Include="Assets\InitialVelocity.cs" />
      <Compile Include="Assets\MouseManager.cs" />
      <Compile Include="Assets\MusicButton.cs" />
+     <Compile Include="Assets\PauseButton.cs" />
      <Compile Include="Assets\PlayButton.cs" />
      <Compile Include="Assets\QuitButton.cs" />
      <Compile Include="Assets\SettingsButton.cs" />
      <Compile Include="Assets\cameraMover.cs" />
      <Compile Include="Assets\collisionHandler.cs" />
      <Compile Include="Assets\deathTrigger.cs" />
+     <Compile Include="Assets\resumeButton.cs" />
      <Compile Include="Assets\scoreManager.cs" />
      <None Include="Assets\fonts\font info.txt" />
  <Reference Include="UnityEngine.UI">
