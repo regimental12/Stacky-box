@@ -22,6 +22,6 @@ public class resumeButton : MonoBehaviour {
         pb.GetComponent<PauseButton>().paused = false;
         pb.GetComponent<PauseButton>().noGUI = true;
         Time.timeScale = 1.0f;
-        //Destroy(this.gameObject);
+        Destroy(this.gameObject);
     }
 }

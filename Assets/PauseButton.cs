@@ -4,10 +4,10 @@ using System.Collections;
 public class PauseButton : MonoBehaviour {
 
 
-    public GameObject ResumeButton;
+    public GameObject ResumeButton1;
     //public GameObject musicButton;
     //public GameObject quitButton;
-    GameObject resumeClone/*, musicClone, quitClone*/;
+    public GameObject resumeClone/*, musicClone, quitClone*/;
     
     public bool paused;
     public bool noGUI = false;
@@ -59,14 +59,14 @@ public class PauseButton : MonoBehaviour {
     void buildGUI()
     {
         
-        resumeClone = Instantiate(ResumeButton.transform, ResumeButton.transform.position, ResumeButton.transform.rotation) as GameObject;
+        resumeClone = Instantiate(ResumeButton1.transform, ResumeButton1.transform.position, ResumeButton1.transform.rotation) as GameObject;
         /*musicClone = Instantiate(musicButton.transform, musicButton.transform.position, musicButton.transform.rotation) as GameObject;
         quitClone = Instantiate(quitButton.transform, quitButton.transform.position, quitButton.transform.rotation) as GameObject;*/
     }
 
     void destroyGUI()
     {
-        Destroy(resumeClone.gameObject);
+        //Destroy(resumeClone.gameObject);
         /*DestroyImmediate(musicButton , true);
         DestroyImmediate(quitButton , true);*/
     }

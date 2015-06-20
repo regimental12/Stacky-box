@@ -152,7 +152,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!1 &129422663 stripped
+--- !u!1 &129422663
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 081266cc0a9777c49b4e63bfa5107588, type: 2}
   m_PrefabInternal: {fileID: 1174449216}
@@ -286,7 +286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a544ba49bf47904a8666287abc63a9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResumeButton: {fileID: 165686, guid: d4f50220c31d46541b9ffa7a59f72798, type: 2}
+  ResumeButton1: {fileID: 165686, guid: d4f50220c31d46541b9ffa7a59f72798, type: 2}
+  resumeClone: {fileID: 165686, guid: d4f50220c31d46541b9ffa7a59f72798, type: 2}
   paused: 0
   noGUI: 0
 --- !u!1 &534254931
@@ -345,7 +346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
   score: 0
-  textColor: {r: .113725491, g: .68235296, b: .68235296, a: 1}
+  textColor: {r: .113725498, g: .68235296, b: .68235296, a: 1}
 --- !u!1 &987939912
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,7 +510,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &1255934146
 Transform:
   m_ObjectHideFlags: 0
@@ -577,6 +577,65 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   haslost: 0
   textColor: {r: .113725491, g: .68235296, b: .68235296, a: 1}
+  mystyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: .149870217, g: .926470578, b: .926470578, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!4 &1391707243
 Transform:
   m_ObjectHideFlags: 0
