@@ -42,7 +42,7 @@ public class MouseManager : MonoBehaviour
 
                         // Enable this if you want to collide with objects still (and you probably do)
                         // This will also WAKE UP the spring.
-                        springJoint.collideConnected = true;
+                        springJoint.enableCollision = true;
 
                         // This will also WAKE UP the spring, even if it's a totally
                         // redundant line because the connectedBody should already be null
