@@ -29,6 +29,10 @@ public class AdManager : MonoBehaviour {
         {
             ShowGameOverAd();
         }
+        else if (!dt.haslost)
+        {
+            bannerView.Hide();
+        }
 	}
 	
     void LoadAds() 
@@ -54,8 +58,8 @@ public class AdManager : MonoBehaviour {
             string adUnitId = "unexpected_platform";
         #endif
 
-        // Create a 320x50 banner at the top of the screen.
-        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Top);
+        // Create a 320x50 banner at the bottom of the screen.
+        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Bottom);
         // Register for ad events.
         bannerView.AdLoaded += HandleAdLoaded;
         bannerView.AdFailedToLoad += HandleAdFailedToLoad;
@@ -117,7 +121,7 @@ public class AdManager : MonoBehaviour {
         }
         else
         {
-            bannerView.Show();
+            print("Interstitial is not ready yet.");
         }
     }
 
