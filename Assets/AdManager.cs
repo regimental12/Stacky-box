@@ -104,11 +104,6 @@ public class AdManager : MonoBehaviour {
         return new AdRequest.Builder()
                 .AddTestDevice(AdRequest.TestDeviceSimulator)
                 .AddTestDevice("0123456789ABCDEF0123456789ABCDEF")
-                .AddKeyword("game")
-                .SetGender(Gender.Male)
-                .SetBirthday(new DateTime(1985, 1, 1))
-                .TagForChildDirectedTreatment(false)
-                .AddExtra("color_bg", "9B30FF")
                 .Build();
 
     }
