@@ -256,7 +256,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: c567a815735e5a24f9faef4bff02cb21, type: 3}
   m_Material: {fileID: 2100000, guid: c567a815735e5a24f9faef4bff02cb21, type: 3}
-  m_FontSize: 50
+  m_FontSize: 150
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -274,7 +274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!114 &266858446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,11 +390,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 987939912}
   m_LocalRotation: {x: 0, y: 0, z: .0871557519, w: .99619472}
-  m_LocalPosition: {x: 2.5, y: -3.19799995, z: 0}
+  m_LocalPosition: {x: 2.5, y: -2.69799995, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1255934146}
+  m_RootOrder: 0
 --- !u!1001 &1174449216
 Prefab:
   m_ObjectHideFlags: 0
@@ -520,7 +520,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 987939914}
+  - {fileID: 1633755012}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!114 &1255934147
@@ -625,9 +627,9 @@ MonoBehaviour:
       m_Top: 0
       m_Bottom: 0
     m_Font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
-    m_FontSize: 50
+    m_FontSize: 100
     m_FontStyle: 0
-    m_Alignment: 0
+    m_Alignment: 4
     m_WordWrap: 0
     m_RichText: 1
     m_TextClipping: 0
@@ -648,7 +650,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
 --- !u!1 &1633755010
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,11 +694,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1633755010}
   m_LocalRotation: {x: 0, y: 0, z: .0871554017, w: -.99619472}
-  m_LocalPosition: {x: -2.5, y: -3.19799995, z: 0}
+  m_LocalPosition: {x: -2.5, y: -2.69799995, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1255934146}
+  m_RootOrder: 1
 --- !u!1 &1917879459
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,4 +737,4 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6

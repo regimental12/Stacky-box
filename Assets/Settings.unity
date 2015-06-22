@@ -120,7 +120,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
   m_Material: {fileID: 2100000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
-  m_FontSize: 50
+  m_FontSize: 150
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -183,7 +183,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
   m_Material: {fileID: 2100000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
-  m_FontSize: 50
+  m_FontSize: 150
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -213,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b819eec224b14c8ed10067b3cd08d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  play: 0
+  gm: {fileID: 0}
 --- !u!1 &856294445
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +340,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
+  m_StereoMirrorMode: 0
 --- !u!4 &1032048545
 Transform:
   m_ObjectHideFlags: 0

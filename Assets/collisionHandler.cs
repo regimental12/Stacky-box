@@ -3,6 +3,14 @@ using System.Collections;
 
 public class collisionHandler : MonoBehaviour {
 
+    public AudioClip box;
+    public AudioSource audio;
+
+    void Start()
+    {
+        audio = GetComponent<AudioSource>();
+    }
+
 	void OnCollisionEnter2D()
     {
         Vector3 camPos = Camera.main.transform.position;
@@ -10,6 +18,8 @@ public class collisionHandler : MonoBehaviour {
         {
             Camera.main.GetComponent<cameraMover>().targetY = transform.position.y;
         }
-        GetComponent<AudioSource>().Play();
+        audio.PlayOneShot(box, 1.0f);
     }
+
+   
 }

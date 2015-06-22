@@ -19,15 +19,18 @@ public class deathTrigger : MonoBehaviour {
         
         if (haslost)
         {
-            GUI.skin.label.fontSize = 50;
-			GUI.color = textColor;
-            GUI.Label(new Rect((Screen.width / 2) -100 , (Screen.height / 2) - 25, 300, 70), "GAME OVER!");
+            GUI.skin.label.fontSize = 150;
+            GUI.skin.label.alignment = TextAnchor.MiddleCenter;
             
-            if (GUI.Button(new Rect(Screen.width/2 - 70, Screen.height/2+50, 100, 50), "RESTART" ,mystyle ))
+			GUI.color = textColor;
+            GUI.Label(new Rect((Screen.width / 2) -500 , (Screen.height / 2) - 200, 1000, 200), "GAME OVER!");
+            
+            
+            if (GUI.Button(new Rect(Screen.width/2 -50 , Screen.height/2+150, 100, 50), "RESTART" ,mystyle ))
             {
                 Application.LoadLevel(Application.loadedLevel);
             }
-            if (GUI.Button(new Rect(Screen.width / 2 - 40 , Screen.height / 2 + 150, 100, 50), "QUIT" , mystyle))
+            if (GUI.Button(new Rect(Screen.width / 2 -50 , Screen.height / 2 + 350, 100, 50), "QUIT" , mystyle))
             {
                 Application.LoadLevel("MainMenu");
             }

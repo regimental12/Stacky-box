@@ -32,13 +32,13 @@ public class BoxLauncher : MonoBehaviour
 
             GameObject.FindObjectOfType<scoreManager>().score++;
 
-            Vector3 camPos = GameObject.FindObjectOfType<cameraMover>().transform.position;
+           /* Vector3 camPos = GameObject.FindObjectOfType<cameraMover>().transform.position;
             Vector3 luancherPos = boxGO.transform.position;
             float dist = camPos.y - luancherPos.y;
             if (dist > 0.5)
             {
                 fireVelocity += 1;
-            }
+            }*/
         }
         
 	}

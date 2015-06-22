@@ -57,7 +57,7 @@ GUIText:
   m_TabSize: 4
   m_Font: {fileID: 12800000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
   m_Material: {fileID: 2100000, guid: e2275b872e5685b48890b5b112a91aed, type: 3}
-  m_FontSize: 50
+  m_FontSize: 100
   m_FontStyle: 0
   m_Color:
     serializedVersion: 2
@@ -70,7 +70,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_FontSize
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 165686}

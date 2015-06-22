@@ -3,9 +3,11 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour 
 {
+    public bool playing;
     public AudioSource music;
     private static GameManager _Instance;
     public static GameManager Instance 
+    
     {
         get
         {
@@ -42,11 +44,30 @@ public class GameManager : MonoBehaviour
         music.clip = Resources.Load("Outofplace") as AudioClip;
         music.loop = true;
         music.Play();
+        playing = true;
     }
 
     public void toggleMusic()
     {
-        
+        if(playing)
+        {
+            music.Stop();
+            playing = false;
+        }
+        else
+        {
+            music.Play();
+            playing = true;
+        }
+
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 	
 }

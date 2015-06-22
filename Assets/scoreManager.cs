@@ -20,12 +20,12 @@ public class scoreManager : MonoBehaviour {
     {        
         GUI.skin.font = font;
 		GUI.color = textColor;
-        GUI.skin.box.fontSize = 36;
+        GUI.skin.label.fontSize = 100;
         //GUIStyle style = new GUIStyle(GUI.skin.box);
         //style.padding = new RectOffset(0, 0, 20, 0);
         
         //GUI.Box(new Rect(-25, 0, Screen.width +40, 100),  "Score: " + score /*, style*/ //);
-        GUI.Label(new Rect(Screen.width/2 - 70, 10, Screen.width + 40, 100), "SCORE: " + score);
+        GUI.Label(new Rect(Screen.width/2- 250, 10 , 500 , 200), "SCORE: " + score);
 
         
         
